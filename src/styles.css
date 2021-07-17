@@ -1,2 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
+html{
+    background-color: #30B4CF;
+    background: linear-gradient(
+        321deg
+        ,rgba(48,180,205,.7),rgba(88,196,216,.7));
+}
+
