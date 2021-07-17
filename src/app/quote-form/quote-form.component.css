@@ -3,5 +3,17 @@
     border-radius: 50px;
 }
 .quotefrm{
-    background-color: white;
+    background: white;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.frm {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
