@@ -1,4 +1,6 @@
+import { formatCurrency } from '@angular/common';
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 // import * as EventEmitter from 'events';
 import { Quote } from '../quote';
 
@@ -9,16 +11,16 @@ import { Quote } from '../quote';
 })
 export class QuoteFormComponent implements OnInit {
   newQuote = new Quote("","","");
-
+  
   @Output() addQuote = new EventEmitter<Quote>();
-
+ 
   submitQuote(){
     this.addQuote.emit(this.newQuote);
-
+    this.newQuote = new Quote("","","");
   }
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
