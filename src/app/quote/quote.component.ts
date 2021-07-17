@@ -9,7 +9,8 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
     new Quote("clare","Dad","Ker Kosir Serung'ung!"),
-    new Quote("clare","Les Brown","Life Ha no limitations except the ones you make")
+    new Quote("clare","Les Brown","Life Ha no limitations except the ones you make"),
+    new Quote("clare","Mahatma Gandhi","Live as if you were to die tomorrow. Learn as if you were to live forever.")
   ];
   addNewQuote(quote:any){
     let quoteLength = this.quotes.length;

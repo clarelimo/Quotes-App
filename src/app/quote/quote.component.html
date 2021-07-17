@@ -3,7 +3,6 @@
 </div>
 <div class="container">
     <app-quote-form (addQuote) = "addNewQuote($event)"></app-quote-form>
-    <!-- <app-quote-detail></app-quote-detail> -->
     <div class="row">
         <div *ngFor='let quote of quotes;let i = index' class="col-md-4 mb-4">
             <div class="card text-white bg-dark h-100">
