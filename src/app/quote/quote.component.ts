@@ -8,12 +8,12 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[new Quote("clare","Dad","Ker Kosir Serung'ung!")];
-  // addNewQuote(quote:any){
-  //   let quoteLength = this.quotes.length;
-  //   quote.id = quoteLength+1;
+  addNewQuote(quote:any){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
   
-  //   this.quotes.push(quote);
-  // }
+    this.quotes.push(quote);
+  }
   constructor() { }
 
   ngOnInit(): void {
