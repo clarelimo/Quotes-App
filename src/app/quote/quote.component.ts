@@ -7,9 +7,9 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  // quotes:Quote[] = new Quote();
+  quotes:Quote[]=[new Quote("clare","Dad","Ker Kosir Serung'ung!")];
   // addNewQuote(quote:any){
-  //   let quoteLength = this.quote.length;
+  //   let quoteLength = this.quotes.length;
   //   quote.id = quoteLength+1;
   
   //   this.quotes.push(quote);

@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container mt-5 mb-5">
     <h1>Create a new Quote</h1>
-    <hr>
-    <form  #quoteForm='ngForm' class="w-50">
+    
+    <form #quoteForm='ngForm' class="w-50 mt-5 mb-5">
         <div class="form-group">
             <label for="description">Quote:</label>
             <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
@@ -24,6 +24,6 @@
            </div>
         </div>
 
-        <button type="submit" class="btn btn-success">Add Quote</button>
+        <button type="submit" class="btn mt-4">Add Quote</button>
     </form>
 </div>
