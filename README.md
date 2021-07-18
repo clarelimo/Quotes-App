@@ -1,7 +1,9 @@
 # QuotesApp
+#### By **Clare Limo**
+## Description
+This is an angular cli app that allows users to create quotes, view delete and have those voted on whether they liked or disliked them.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -25,3 +27,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Setup/Installation Requirements
+* You need to have visual studio code installed.
+* Clone the repository
+* Go Live.
+## Known Bugs
+There are no known bugs.
+## Technologies Used
+* HTML 
+* CSS 
+* Angular
+* Bootstrap
+## Support and contact details
+Email : clare.limo@student.moringaschool.com
+### License
+[MIT License](./LICENSE)
+
+Copyright (c) [2021] [Clare Limo]
+
