@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
     new Quote("clare","Dad","Ker Kosir Serung'ung!",0,0,new Date(2020,1,12)),
-    new Quote("clare","Les Brown","Life Ha no limitations except the ones you make",0,0,new Date(2021,6,17)),
+    new Quote("clare","Les Brown","Life has no limitations except the ones you make",0,0,new Date(2021,6,17)),
     new Quote("clare","Mahatma Gandhi","Live as if you were to die tomorrow. Learn as if you were to live forever.",0,0, new Date(2012,12,12))
   ];
   addNewQuote(quote:any){
@@ -21,7 +21,7 @@ export class QuoteComponent implements OnInit {
 
   deleteQuote(isComplete:any,index:any){
     if(isComplete){
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].author}?`)
+      let toDelete = confirm(`Are you sure you want to delete a quote by ${this.quotes[index].author}?`)
       if(toDelete){
         this.quotes.splice(index,1);
       }
