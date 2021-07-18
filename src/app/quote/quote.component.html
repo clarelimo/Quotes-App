@@ -15,6 +15,9 @@
                     <footer class="blockquote-footer"><cite title="Source Title">{{quote.author}} </cite></footer>
                     </blockquote>
                 </div>
+                <div class="card-footer">
+                    <app-quote-detail [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+                </div>
             </div>
         </div>
     </div>
