@@ -1,9 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body{
-    background-color: #30B4CF;
     background: linear-gradient(
         321deg
-        ,rgba(48,180,205,.7),rgba(88,196,216,.7));
+        ,rgba(114, 83, 83, 0.719),rgba(88,196,216,.7),rgb(108, 197, 108));
 }
 
