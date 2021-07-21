@@ -8,10 +8,17 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
-    new Quote("clare","Dad","Ker Kosir Serung'ung!",0,0,new Date(2020,1,12)),
-    new Quote("clare","Les Brown","Life has no limitations except the ones you make",0,0,new Date(2021,6,17)),
-    new Quote("clare","Mahatma Gandhi","Live as if you were to die tomorrow. Learn as if you were to live forever.",0,0, new Date(2012,12,12))
+    new Quote("clare","Dad","Ker Kosir Serung'ung!",490,4,new Date(2020,1,12)),
+    new Quote("clare","Les Brown","Life has no limitations except the ones you make",309,5,new Date(2021,6,17)),
+    new Quote("clare","Mahatma Gandhi","Live as if you were to die tomorrow. Learn as if you were to live forever.",353,10, new Date(2012,12,12))
   ];
+
+  get sortQuotes(){
+   return this.quotes.sort((a,b) => {
+      return b.likes - a.likes;
+    })
+  }
+
   addNewQuote(quote:any){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
@@ -28,7 +35,7 @@ export class QuoteComponent implements OnInit {
     }
 
   }
-
+  
   constructor() { }
 
   ngOnInit(): void {
